@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Collections.ObjectModel;
 using Disassembly;
 using Disassembly.Information;
 
@@ -9,8 +8,6 @@ namespace AssemblyBrowser.Model
     {
         private Disassembler _disassembler = new Disassembler();
         private AssemblyInfoMember _members = null;
-
-        //public ObservableCollection<AssemblyInfoMember> Members { get; }
 
         public AssemblyInfoMember Members 
         {

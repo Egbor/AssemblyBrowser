@@ -24,22 +24,6 @@
             <HierarchicalDataTemplate DataType="{x:Type ds:AssemblyInfoMember}" ItemsSource="{Binding Path=Members}">
                 <TextBlock Text="{Binding Path=Content}"/>
             </HierarchicalDataTemplate>
-
-            <!--<HierarchicalDataTemplate DataType="{x:Type Ass}" ItemsSource="{Binding Path=Members}">
-                <TextBlock Text="Root"/>
-            </HierarchicalDataTemplate>
-            <HierarchicalDataTemplate DataType="{x:Type m:AssemblyNamespace}" ItemsSource="{Binding Path=Types}">
-                <TextBlock  Text="{Binding Path=Name}"/>
-            </HierarchicalDataTemplate>
-            <HierarchicalDataTemplate DataType="{x:Type m:AssemblyType}" ItemsSource="{Binding Path=Members}">
-                <TextBlock Text="{Binding Path=TypeName}"/>
-            </HierarchicalDataTemplate>
-            <HierarchicalDataTemplate DataType="{x:Type m:AssemblyMembers}" ItemsSource="{Binding Path=Members}">
-                <TextBlock Text="{Binding Path=Tag}"/>
-            </HierarchicalDataTemplate>
-            <HierarchicalDataTemplate DataType="{x:Type m:AssemblyMember}">
-                <TextBlock Text="{Binding Path=Content}"/>
-            </HierarchicalDataTemplate>-->
         </Grid.Resources>
 
         <Menu Grid.Row="0">

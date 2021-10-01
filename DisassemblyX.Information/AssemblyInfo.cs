@@ -10,8 +10,6 @@ namespace Disassembly.Information
 {
     public class AssemblyInfo : AssemblyInfoMember
     {
-        //internal List<AssemblyNamespaceInfo> _namespaces = new List<AssemblyNamespaceInfo>();
-
         public AssemblyInfo(Type[] types) : base("root")
         {
             foreach (Type type in types)
@@ -30,17 +28,6 @@ namespace Disassembly.Information
                 }
 
                 member._infos.Add(newMember);
-
-                //AssemblyNamespaceInfo namespaceInfo = _namespaces.Find(x => (x.Name == type.Namespace) || ((type.Namespace == null) && (x.Name == "Unknown")));
-                //AssemblyTypeInfo typeInfo = new AssemblyTypeInfo(type);
-
-                //if (namespaceInfo == null)
-                //{
-                //    namespaceInfo = new AssemblyNamespaceInfo(type.Namespace == null ? "Unknown" : type.Namespace);
-                //    _namespaces.Add(namespaceInfo);
-                //}
-
-                //namespaceInfo._types.Add(typeInfo);
             }
         }
 
@@ -97,10 +84,5 @@ namespace Disassembly.Information
                 member._infos.Add(methods);
             }
         }
-
-        //public AssemblyNamespaceInfo[] GetNamespaces()
-        //{
-        //    return _namespaces.ToArray();
-        //}
     }
 }
