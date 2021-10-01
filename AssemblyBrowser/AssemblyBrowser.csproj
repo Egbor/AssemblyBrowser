@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\AssemblyInfo.cs" />
+    <Compile Remove="Model\AssemblyInfoMember.cs" />
+    <Compile Remove="Model\AssemblyMember.cs" />
+    <Compile Remove="Model\AssemblyMembers.cs" />
+    <Compile Remove="Model\AssemblyNamespace.cs" />
+    <Compile Remove="Model\AssemblyType.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DisassemblyX.Information\DisassemblyX.Information.csproj" />
+    <ProjectReference Include="..\DisassemblyX\DisassemblyX.csproj" />
+  </ItemGroup>
+
+</Project>

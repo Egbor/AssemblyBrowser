@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Information\**" />
+    <EmbeddedResource Remove="Information\**" />
+    <None Remove="Information\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Disassembly.Infomation\Disassembly.Infomation.csproj" />
+  </ItemGroup>
+
+</Project>
